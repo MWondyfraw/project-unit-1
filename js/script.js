@@ -54,7 +54,7 @@ function getRandomQuote (){
 }
   
 /***
- * `printQuote` function
+ * `printQuote` function to display random quotes
 ***/
 
 function printQuote (){
