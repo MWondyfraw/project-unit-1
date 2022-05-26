@@ -45,7 +45,7 @@ const quotes = [
 
 
 /***
- * `getRandomQuote` function: create a random number and use that number to return quote.
+ * `getRandomQuote` function: create a random number and use that number to return quote
 ***/
 
 function getRandomQuote (){
@@ -61,8 +61,14 @@ function printQuote (){
   const randomQuote = getRandomQuote();
   const html = 
   `<p class="quote"> A random quote </p><p class="source"> quote source </p>`
-
+  if ("citation" in randomQuote) {
+    `html += <span class="citation"> quote citation </span>`;
+  }
+  if ("year" in randomQuote) {
+    `html += <span class="year"> quote year </span>`;
+  }
 }
+document.getElementById('quote-box').innerHTML = yourStringHere; 
 
 
 
