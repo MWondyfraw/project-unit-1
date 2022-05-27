@@ -4,10 +4,14 @@ project 1 - A Random Quote Generator
 ******************************************/
 
   // 
-  // create an app that displays random famous quotes each time a button is clicked.
+  // 
 
 /*** 
-* Array of Objects
+*
+1. Create an app that displays random famous quotes each time a button is clicked.
+2. I added five quote objects.
+3. All of them have quote and source properties.
+4. At least there is one object with a citation and/or year property. 
 ***/
 const quotes = [ 
   {
@@ -43,7 +47,12 @@ const quotes = [
 
 
 /***
- * `getRandomQuote` function: create a random number and use that number to return quote
+ * 
+  `getRandomQuote` function: 
+ 1. create a random number and use that number to return quote.
+ 2. This line of code allows the random number to pick out random quote objects.
+ 3. I write the code this way to make it easy to fix or modify it in the future for myself and others.
+ 4. Without this function, It is not possible to have a random quote generator.
 ***/
 
 function getRandomQuote (){
@@ -52,7 +61,10 @@ function getRandomQuote (){
 }
   
 /***
- * `printQuote` function to display random quotes
+ * `printQuote` function 
+ 1. This code display random quotes generated from random number.
+ 2. It is important to make sure the HTML is contained and free of syantx errors.
+ 3. I write this code to this way to make easy to debug in the future. 
 ***/
 
 function printQuote (){
