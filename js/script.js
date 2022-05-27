@@ -19,7 +19,7 @@ const quotes = [
 {
     quote:'Justice is like a snake: it only bites the barefooted.',
     source:'Eduardo Galeano',
-    citation:'Upside Down: A Primer for the Looking-Glass World'
+    citation:'Upside Down: A Primer for the Looking-Glass World',
     year:'2014'
 },
 {
@@ -31,7 +31,7 @@ const quotes = [
 {
     quote:'We die. That may be the meaning of life. But we do language. That may be the measures of our lives.',
     source:'Toni Morrison',
-    citation:'Nobel Acceptance Speech'
+    citation:'Nobel Acceptance Speech',
     year:'1993'
 },
 {
