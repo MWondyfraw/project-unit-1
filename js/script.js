@@ -17,29 +17,27 @@ const quotes = [
     year:'1992' 
 },
 {
-  quote:'Justice is like a snake: it only bites the barefooted.',
-  sources:'Eduardo Galeano',
-  citation:'Upside Down: A Primer for the Looking-Glass World',
-  year:'2014',
-  tags:'Inspirational'
+    quote:'Justice is like a snake: it only bites the barefooted.',
+    source:'Eduardo Galeano',
+    citation:'Upside Down: A Primer for the Looking-Glass World'
+    year:'2014'
 },
 {
-  quotes:'Before you run your race you gotta find your pace.',
-  sources:'Nipsey Hussle',
- citation:'Perft Timing',
+    quote:'Before you run your race you gotta find your pace.',
+    source:'Nipsey Hussle',
+    citation:'Perecft Timing'
   
 },
 {
-  quotes:'We die. That may be the meaning of life. But we do language. That may be the measures of our lives.',
-  sources:'Toni Morrison',
-  citation:'Nobel Acceptance Speech',
-  year:'1993'
+    quote:'We die. That may be the meaning of life. But we do language. That may be the measures of our lives.',
+    source:'Toni Morrison',
+    citation:'Nobel Acceptance Speech'
+    year:'1993'
 },
 {
-  quotes:'Do you know what it means to have a revolution. And what it takes to make a solution.',
-  sources:'Dennis Brown',
-  citation:'Revolution',
-  
+    quote:'Do you know what it means to have a revolution. And what it takes to make a solution.',
+    source:'Dennis Brown',
+    citation:'Revolution'
 },
 ];
 
@@ -59,16 +57,19 @@ function getRandomQuote (){
 
 function printQuote (){
   const randomQuote = getRandomQuote();
-  const html = 
-  `<p class="quote"> A random quote </p><p class="source"> quote source </p>`
+    console.log(randomQuote);
+  let html = 
+  `<p class="quote"> ${randomQuote.quote} </p><p class="source"> ${randomQuote.source}` 
   if ("citation" in randomQuote) {
-    `html += <span class="citation"> quote citation </span>`;
+    html += `<span class="citation"> ${randomQuote.citation} </span>`;
   }
   if ("year" in randomQuote) {
-    `html += <span class="year"> quote year </span>`;
+    html += `<span class="year"> ${randomQuote.year} </span>`;
   }
+    html +="</p>"
+  document.getElementById('quote-box').innerHTML = html; 
 }
-document.getElementById('quote-box').innerHTML = yourStringHere; 
+
 
 
 
